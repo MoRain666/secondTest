@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    var LoginDef=prompt("кто пришёл?",""),password;
+   if (LoginDef=="Админ"){
+
+    password=prompt('пароль?',"");
+       if (password=='Чёрный Властелин'){
+
+           alert("Добро пожаловать")
+       }
+       else if (password==null){
+           alert('Вход отменён')
+       }
+       else {alert("я вас не знаю")}
+   }
+   else if (LoginDef==null){
+       alert('Вход отменён');
+   }
+   else {
+       alert("я вас не знаю");
+   }
+
+</script>
+</body>
+</html>
